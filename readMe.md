@@ -70,16 +70,31 @@ REACT_APP_API_URL: URL for the backend API.
 - **`EmailForm.tsx`**: Form for sending emails.
 - **`ProviderList.tsx`**: Displays a list of available email providers.
 - **`SwitchProvider.tsx`**: Allows switching between email providers.
+- **`common folder`**: Contains common components used across the application. (e.g., `SuccessMessage.tsx`,
+  `LoadingSpinner.tsx`)
+- **`forms folder`**: Contains form components used across the application. (e.g., `Input.tsx`, `SubmitButton.tsx`)
 
 ## Services
 
 - **`emailService.ts`**: Handles API calls for sending emails.
 - **`providerService.ts`**: Handles API calls for provider-related operations.
 
-## Utils
+## Contexts
 
-- **`apiClient.ts`**: Axios instance configured for API calls.
-- **`validation.ts`**: Functions for form validation.
+- **`ProviderContext.tsx`**: Context for managing the selected email provider.
+
+## Hooks
+
+- **`useEmailForm.ts`**: Custom hook for handling email form state.
+- **`useFormValidation.ts`**: Custom hook for form validation.
+- **`useProviders.ts`**: Custom hook for handling provider state from context.
+- **`useSwitchProvider.ts`**: Custom hook for handling provider switching.
+- **`useClearMessage.ts`**: Custom hook for clearing success messages.
+- **`useDebounce.ts`**: Custom hook for debouncing input changes.
+
+## Styles
+
+Custom styles for components.
 
 ## Test Files
 
