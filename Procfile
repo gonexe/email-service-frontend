@@ -1,1 +1,1 @@
-web: serve -s build
+web: nginx -g 'daemon off;'
